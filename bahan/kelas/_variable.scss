@@ -1,0 +1,34 @@
+$font-bersambung:'Russo One', sans-serif;
+$font-besar     :34px;
+$font-kecil     :14px;
+$color:rgb(41, 41, 197);
+$font: 'Bangers', cursive;;
+$color2: black;
+$font-menu   :24px;
+$lebar-cont      :960px;
+$tengah-x     : 0 auto;
+
+
+//Extend
+%linkbiasa{
+    color: $color;
+    text-decoration: none;
+}
+
+%standar{
+    padding: 0;
+    margin: 0;
+}
+
+
+//mixin - include
+
+@mixin border-rad($radius) {
+    border-radius: $radius;
+    -ms-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+

@@ -1,0 +1,70 @@
+#container{
+    width: $lebar-cont;
+    margin: $tengah-x;
+}
+
+
+#main{
+    width: 600px /$lebar-cont  * 100%;
+    float: left;
+}
+
+#sidebar{
+    width: 360px /$lebar-cont  * 100%;
+    float: left;
+}
+
+
+
+h1{
+    font-family: $font-bersambung ;
+    font-size: $font-besar ;
+    color: $color;
+}
+
+p{
+    font-family: $font;
+    font-size: $font-kecil;
+    color: $color2; 
+}
+
+//Nesting + pseudo class
+
+ul{
+    li{
+        display: inline-block;
+        list-style: none;
+        font-size: $font-menu;
+        a{
+           @extend %linkbiasa;
+           &:hover{
+               color: purple;
+           }
+        }
+    }
+}
+
+
+.button{
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    @include border-rad(10px);
+}
+
+.Suka{
+    background-color: rgb(51, 184, 33);
+}
+
+.Cukup{
+    background-color: rgb(19, 104, 126);
+}
+
+.Kurang{
+    background-color: rgb(46, 45, 153);
+}
+
+
